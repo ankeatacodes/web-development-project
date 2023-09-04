@@ -5,13 +5,7 @@ body {
     background-color: #000;
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
-    background-image: url(background.png); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center center;
-    background: height 75%px;  
 }
-
 .main {
     height: 100vh;
     display: flex;
@@ -93,10 +87,9 @@ body {
 .sticky-nav-options img{
     width: 25px;;
     height: 25px;
-   padding: 10px;
-   position:relative;
-   margin-right: 0px;
-   
+    padding: 10px;
+    position:relative;
+    margin-right: 0px;
 }
 
 .nav-icons {
@@ -155,18 +148,15 @@ body {
     cursor: pointer;
 }
 .container {
-   display : flex;
-   flex-direction :row;
-   justify-content: space-between;
-   align-items:normal;
-   margin-left: 200px;
-   margin-right: 200px;
-   margin-top: 100px;
-   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: normal;
+    /* margin-left: 200px; */
+    /* margin-right: 200px; */
+    /* margin-top: 100px; */
+    padding: 55px;
 }
-
- 
-
 .container .box-cell.box1 {
     height: 200px;
     width: 50%;
@@ -193,8 +183,18 @@ body {
     margin-bottom: 10px;
     margin-top: 0px;
 }
-  .search-bar{
-    width: 400px;
+.main-container {
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: height 75%px;
+    margin: 0;
+    padding: 40px;
+    height: 100vh;
+}
+.search-bar{
+    width: 125px;
     height:20px;
     margin-top: 0.5rem;
     margin-right: 200px;
@@ -208,23 +208,33 @@ body {
     align-items: center;
     justify-content:start;
     color:#fff;
-
+    transition: 0.7s ease-in-out;
 }
+
+.search-bar:hover {
+    width: 400px;
+}
+
 
 .search-bar input {
-    flex: 0.5;
+    /* flex: 0.5; */
     background-color: #5e5e5d;
-    
     border: none;
     border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .search-bar input  {
-    width: 100%;
+    width: 50%;
     background-color: #5e5e5d;
     border: none;
-    margin: 0;
+    margin: 0px;
     padding: 10px;
     outline: none;
+}
+.search-bar input::after {
+    width: 100%;
 }
 .search-bar button {
     color: #ffffff;
